@@ -1,0 +1,107 @@
+/* BODY y layout general */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 20px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /*Estas 3 líneas necesarias para tirar el footer hacia abajo*/
+}
+
+/* NAV */
+nav {
+    background-color: #c52523;
+    padding: 15px;
+    display: flex;               /* habilita flexbox */
+    align-items: center;         /* centra verticalmente */
+    justify-content: space-between; /* enlaces a la izquierda, toggle a la derecha */
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #c52523;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+/* BOTONES GENERALES */
+button {
+    background-color: orange;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.theme-selector {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: white; /* para que se vea sobre el nav rojo */
+}
+
+.theme-selector input[type="radio"] {
+  margin-right: 5px;
+  accent-color: orange; /* color del radio cuando está seleccionado */
+  cursor: pointer;
+}
+
+.theme-selector label {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Títulos generales (puedes ajustarlo después) */
+.titulo-1 {
+    margin-top: 30px;
+}
+
+.titulo-3 {
+    font-size: 1.8rem;
+}
+
+/* Pantalla grande: 5 cartas por fila */
+@media (min-width: 1200px) {
+  #battle-container {
+    grid-template-columns: repeat(5, 180px);
+    justify-content: center;
+  }
+}
+
+/* Pantalla mediana: 2 cartas por fila */
+@media (max-width: 1200px) and (min-width: 600px) {
+  #battle-container {
+    grid-template-columns: repeat(2, 180px);
+    justify-content: center;
+  }
+}
+
+/* Pantalla pequeña: 1 carta por fila */
+@media (max-width: 600px) {
+  #battle-container {
+    grid-template-columns: repeat(1, 180px);
+    justify-content: center;
+  }
+}
