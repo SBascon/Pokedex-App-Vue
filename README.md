@@ -1,4 +1,4 @@
-# Pokémon Battle App (Pokédex en Vue)
+# Pokédex Pokémon (en Vue)
 
 Una aplicación web desarrollada en **Vue 3** que actúa como **Pokédex interactiva**.  
 Permite visualizar información básica de Pokémon, filtrar por nombre y ver detalles de cada Pokémon.  
@@ -46,7 +46,7 @@ npm install
 npm run dev
 ```
 
-## Uso del tema claro/oscuro
+## 🎨 Uso del tema claro/oscuro
 
 En la barra de navegación, selecciona Claro u Oscuro.
 
