@@ -1,25 +1,44 @@
-# vue-intro
+# Pokémon Battle App (Pokédex en Vue)
 
-This template should help get you started developing with Vue 3 in Vite.
+Una aplicación web desarrollada en **Vue 3** que actúa como **Pokédex interactiva**.  
+Permite visualizar información básica de Pokémon, filtrar por nombre y ver detalles de cada Pokémon.  
 
-## Recommended IDE Setup
+> ⚠️ Esta versión se centra únicamente en la **Pokédex**, sin la funcionalidad de combate.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## 📌 Características
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- Muestra **10 Pokémon aleatorios** al cargar la página.  
+- Cada Pokémon se representa en una **tarjeta interactiva** con:
+  - Nombre  
+  - Imagen  
+  - Valor de Ataque  
+  - Valor de Defensa  
+- **Vista de detalle** para cada Pokémon:
+  - Muestra información completa incluyendo HP y Velocidad.  
+- **Filtro en tiempo real** por nombre de Pokémon.  
+- **Tema claro/oscuro** configurable desde la barra de navegación, con persistencia en LocalStorage.  
+- **Responsive**: las tarjetas y la interfaz se adaptan a móviles, tablets y pantallas grandes.  
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🚀 Tecnologías utilizadas
 
-## Project Setup
+- [Vue 3](https://vuejs.org/) – Framework principal  
+- [Vue Router](https://router.vuejs.org/) – Navegación entre vistas  
+- CSS personalizado para estilo y efectos visuales  
+- PokeAPI ([https://pokeapi.co/](https://pokeapi.co/)) – API de datos de Pokémon  
+
+---
+
+## ⚡ Instalación y ejecución
+
+1. Clonar el repositorio:  
+```bash
+git clone <url-del-repo>
+
+
 
 ```sh
 npm install
