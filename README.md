@@ -34,30 +34,22 @@ Permite visualizar información básica de Pokémon, filtrar por nombre y ver de
 
 ## ⚡ Instalación y ejecución
 
-1. Clonar el repositorio:  
-```bash
-git clone <url-del-repo>
-
-
+### Instalar dependencias:
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Ejecutar el servidor de desarrollo:
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+## Uso del tema claro/oscuro
 
-```sh
-npm run build
-```
+En la barra de navegación, selecciona Claro u Oscuro.
 
-### Lint with [ESLint](https://eslint.org/)
+La aplicación aplicará los colores correspondientes automáticamente.
 
-```sh
-npm run lint
-```
+La preferencia se guarda en LocalStorage, por lo que se mantiene al recargar la página.
